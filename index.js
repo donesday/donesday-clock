@@ -75,7 +75,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "0c097e3c9cdc62fa2d3c"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "c3456a2f595a589dd77e"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -37732,6 +37732,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  formattedTagline: function formattedTagline() {
 	    return this.state.phase == 'worktime' ? worktimeTagline : talktimeTagline;
 	  },
+	  getPauseText: function getPauseText() {
+	    return this.state.isPaused ? 'continue' : 'pause';
+	  },
 	  render: function render() {
 	
 	    if (this.state.isHelpOn) {
@@ -37795,7 +37798,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          _react2.default.createElement(
 	            'a',
 	            { className: 'dd-actionLink dd-btn-pause', 'data-action': 'pause', onClick: this.handleBtnClick, href: '#' },
-	            'pause'
+	            this.getPauseText()
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -38039,7 +38042,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	var Motivation = _react2.default.createClass({
 	  displayName: "Motivation",
 	  render: function render() {
-	    return _react2.default.createElement("iframe", { width: "560", height: "315", src: "https://www.youtube.com/embed/arj7oStGLkU", frameBorder: "0", allowFullScreen: true });
+	    return _react2.default.createElement(
+	      "div",
+	      null,
+	      _react2.default.createElement("br", null),
+	      _react2.default.createElement("br", null),
+	      _react2.default.createElement("iframe", { width: "560", height: "315", src: "https://www.youtube.com/embed/arj7oStGLkU", frameBorder: "0", allowFullScreen: true })
+	    );
 	  }
 	});
 	
