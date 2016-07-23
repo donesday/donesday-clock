@@ -178,6 +178,10 @@ const DonesdayClock = React.createClass({
     return (this.state.phase == 'worktime') ? worktimeTagline : talktimeTagline;
   },
 
+  getPauseText() {
+    return (this.state.isPaused) ? 'continue' : 'pause';
+  },
+
   render() {
 
     if(this.state.isHelpOn) {
@@ -209,7 +213,7 @@ const DonesdayClock = React.createClass({
         <p className="dd-tagline">{this.formattedTagline()}</p>
 
         <ul className="dd-actionLinks">
-          <li><a className="dd-actionLink dd-btn-pause" data-action="pause" onClick={this.handleBtnClick} href="#">pause</a></li>
+          <li><a className="dd-actionLink dd-btn-pause" data-action="pause" onClick={this.handleBtnClick} href="#">{this.getPauseText()}</a></li>
           <li><a className="dd-actionLink dd-btn-help" data-action="help" onClick={this.handleBtnClick} href="#">get help</a></li>
           <li><a className="dd-actionLink dd-btn-motivation" data-action="motivation" onClick={this.handleBtnClick} href="#">get inspired</a></li>
         </ul>
