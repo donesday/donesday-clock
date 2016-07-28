@@ -75,7 +75,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "c3456a2f595a589dd77e"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "6000f9ac09a2bfb542fc"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -37578,7 +37578,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var endWorkSoundLoc = 'snd/applause.mp3';
 	var endTalkSoundLoc = 'snd/witchlaugh.mp3';
 	var talktimeTagline = 'What\'s the first actionable thing you can do about it?';
-	var worktimeTagline = '#DONESDAY #РАБОЧАЯСТАНЦИЯ';
+	var worktimeTagline = '#DONESDAY';
 	
 	var DonesdayClock = _react2.default.createClass({
 	  displayName: 'DonesdayClock',

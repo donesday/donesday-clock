@@ -12,7 +12,7 @@ const talkBgColor = '#548687';
 const endWorkSoundLoc = 'snd/applause.mp3';
 const endTalkSoundLoc = 'snd/witchlaugh.mp3';
 const talktimeTagline = 'What\'s the first actionable thing you can do about it?';
-const worktimeTagline = '#DONESDAY #РАБОЧАЯСТАНЦИЯ';
+const worktimeTagline = '#DONESDAY';
 
 const DonesdayClock = React.createClass({
 
